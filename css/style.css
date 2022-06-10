@@ -7,12 +7,43 @@
 /* Main Styling */
 html,body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #0b0c10;
+    background-color: #fff;
     line-height: 1.7rem;
+    
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
 }
 
 a {
     text-decoration: none;
+}
+
+section h1 , p {
+    color: #0b0c10;
+
+}
+
+.logo {
+    color: #66fcf1;
+}
+
+h1 {
+    /* color: #66fcf1;
+    padding-bottom: 20px;
+    margin:  0 auto; */
+
+    /* display: flex; 
+    justify-content: center;
+    align-items: center; */
+
+}
+
+p {
+    /* color: #0b0c10;
+    margin: 10px 0; */
 }
 
 /* Navbar */
@@ -37,6 +68,12 @@ a {
 
 #navbar ul li {
     float: left;
+    list-style-type: none;
+    h
+}
+
+#navbar ul li a:hover {
+    color: #fff;
 }
 
 #navbar ul li a {
@@ -45,10 +82,3 @@ a {
     text-align: center;
 }
 
-h1 {
-    color: #66fcf1;
-}
-
-p {
-    color: #fff;
-}
