@@ -1,15 +1,13 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Main Styling */
 html,body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
-    line-height: 1.7rem;
-    
+    background-color: #e5e5e5e5;
 }
 
 a {
@@ -17,12 +15,11 @@ a {
 }
 
 section h1 , p {
-    height: 200px;
     color: #0b0c10;
     display: flex; 
     justify-content: center;
     align-items: center;
-
+    line-height: 1.7rem;
 }
 
 .logo {
@@ -67,12 +64,30 @@ section h1 , p {
     text-align: center;
 }
 
-/* Home */
+/* Home Section */
 .home {
     background-color: #e5e5e5e5;
     height: 625px;
-    width: 100vw;
+    padding-top: 200px;
+    
 }
 
+.home p {
+    margin: 50px;
+    padding: 25px;
+}
 
+/* About Me Section */
+.about {
+    background-color: #fff;
+    height: 625px;
+    padding-top: 25px;
+}
 
+.about h1 {
+    margin: 25px;
+}
+
+.about p {
+    padding: 20px;
+}
