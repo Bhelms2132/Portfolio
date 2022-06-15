@@ -12,38 +12,24 @@ html,body {
     
 }
 
-header {
-    height: 100vh;
-    width: 100vw;
-}
-
 a {
     text-decoration: none;
 }
 
 section h1 , p {
+    height: 200px;
     color: #0b0c10;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 
 }
 
 .logo {
     color: #66fcf1;
-}
+    margin-left: 20px;
+    padding: 20px;
 
-h1 {
-    /* color: #66fcf1;
-    padding-bottom: 20px;
-    margin:  0 auto; */
-
-    /* display: flex; 
-    justify-content: center;
-    align-items: center; */
-
-}
-
-p {
-    /* color: #0b0c10;
-    margin: 10px 0; */
 }
 
 /* Navbar */
@@ -69,7 +55,6 @@ p {
 #navbar ul li {
     float: left;
     list-style-type: none;
-    h
 }
 
 #navbar ul li a:hover {
@@ -81,4 +66,13 @@ p {
     padding: 20px;
     text-align: center;
 }
+
+/* Home */
+.home {
+    background-color: #e5e5e5e5;
+    height: 625px;
+    width: 100vw;
+}
+
+
 
