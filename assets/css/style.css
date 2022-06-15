@@ -40,7 +40,6 @@ section h1 , p {
 }
 
 #navbar ul {
-    list-style: ;
     float: right;
 }
 
@@ -108,4 +107,9 @@ section h1 , p {
 .about p {
     float: right;
     padding: 20px;
+}
+
+img {
+    float: left;
+    margin: 10px;
 }
