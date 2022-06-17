@@ -89,7 +89,29 @@ section h1 , p {
 }
 /*******************************************************/
 
+/***** Networking Links **************************/
+.networking {
+    color: #fca311;
+    font-size: 30px;
+    float: right;
+}
+.networking ul {
+    list-style-type: none;
+}
 
+.networking ul li {
+    float: left;
+    padding: 10px;
+}
+
+.networking ul li:hover {
+    color: #14213d;
+}
+
+.networking ul li i {
+    display: block;
+    
+}
 /***** About Me ************************************/
 .about {
     background-color: #fff;
