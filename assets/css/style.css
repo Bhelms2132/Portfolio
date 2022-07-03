@@ -11,14 +11,15 @@
     --hi-light-color:  #fca311;
     --secondary-color: #14213d;
     --text-color: #000;
-    --background-color-primary: #e5e5e5e5;
-    --background-color-secondary: #fff;
+    --background-color-primary: #ffff;
+    --background-color-secondary: #e5e5e5e5;
+    
 }
 
 /***** Main Styling ********************************/
 html,body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #e5e5e5e5;
+    background-color: var(--background-color-primary);
 }
 
 section h1 , p {
@@ -38,7 +39,7 @@ section h1 , p {
 }
 
 #navbar a {
-    color: #fca311;
+    color: var(--hi-light-color);
     text-decoration: none;
 }
 
@@ -57,7 +58,7 @@ section h1 , p {
 }
 
 #navbar ul li a:hover {
-    color: #fff;
+    color: var(--background-color-secondary);
 }
 
 #navbar ul li a {
@@ -67,7 +68,7 @@ section h1 , p {
 }
 
 .logo {
-    color: #fca311;
+    color: var(--hi-light-color);
     margin-left: 20px;
     padding: 20px;
 
@@ -76,9 +77,10 @@ section h1 , p {
 
 /***** Home *********************************************/
 .home {
-    background-color: #e5e5e5e5;
-    height: 625px;
-    padding-top: 200px;
+    background-color: var(--background-color-primary);
+    height: 600px;
+     padding-top: 200px; 
+     margin: auto; 
     
 }
 
@@ -98,12 +100,64 @@ section h1 , p {
 /*******************************************************/
 
 /***** Networking Links **************************/
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    color: var(--secondary-color);
+    
+}
+
+.hover-fx {
+    font-size: 2rem;
+    /* inline-block allows to set width and height on an element */
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    background-color: var(--background-color-secondary);
+    transition: 300ms;
+}
+
+.hover-fx::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /*  */
+    content: '';
+    /*  */
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px var(--secondary-color);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.hover-fx:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color-secondary);
+}
+
+.hover-fx:hover::after {
+    opacity: 1;
+    transform: scale(1.05);
+}
 
 
 
 /***** About Me ************************************/
 .about {
-    background-color: #fff;
+    background-color: var(--background-color-primary);
     height: 625px;
     padding-top: 25px;
 }
