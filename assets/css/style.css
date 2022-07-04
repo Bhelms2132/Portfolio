@@ -8,9 +8,10 @@
 
 /***** Global Variables *****************************/
 :root {
-    --hi-light-color:  #fca311;
-    --secondary-color: #14213d;
-    --text-color: #000;
+    --hi-light-color: #3FD2C7 ;
+    --secondary-color: #99DDFF;
+    --text-color: #5B5B5B;
+    --secondary-text-color:#00458B;
     --background-color-primary: #ffff;
     --background-color-secondary: #e5e5e5e5;
     
@@ -19,27 +20,24 @@
 /***** Main Styling ********************************/
 html,body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     background-color: var(--background-color-primary);
+    color: var(--text-color);
+    line-height: 1.5rem;
 }
 
-section h1 , p {
-    color: var(--text-color);
-    /* display: flex; 
-    justify-content: center;
-    align-items: center; */
-    line-height: 1.7rem;
-}
 /****************************************************/
 
 
 /***** Navbar ***************************************/
 #navbar {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color-primary);
     overflow: auto;
 }
 
 #navbar a {
-    color: var(--hi-light-color);
+    color: var(--secondary-text-color);
     text-decoration: none;
 }
 
@@ -58,7 +56,7 @@ section h1 , p {
 }
 
 #navbar ul li a:hover {
-    color: var(--background-color-secondary);
+    color: var(--hi-light-color);
 }
 
 #navbar ul li a {
@@ -68,7 +66,7 @@ section h1 , p {
 }
 
 .logo {
-    color: var(--hi-light-color);
+    color: var(--secondary-text-color);
     margin-left: 20px;
     padding: 20px;
 
@@ -111,25 +109,36 @@ section h1 , p {
     justify-content: center;
 }
 
-.icons a {
-    color: var(--secondary-color);
-    
-}
-
 .hover-fx {
     font-size: 2rem;
     /* inline-block allows to set width and height on an element */
     display: inline-block;
     cursor: pointer;
     margin: 15px;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 50%;
     text-align: center;
     position: relative;
-    background-color: var(--background-color-secondary);
+    background-color:  var(--background-color-primary);
     transition: 300ms;
+}
+
+.hover-fx .fa-facebook {
+     color: #4267B2;
+}
+
+.hover-fx .fa-linkedin {
+    color: #0072b1;
+}
+
+.hover-fx .fa-instagram {
+    color: #fb3958;
+}
+
+.hover-fx .fa-github {
+   color: #000;
 }
 
 .hover-fx::after {
@@ -142,7 +151,7 @@ section h1 , p {
     content: '';
     /*  */
     box-sizing: content-box;
-    box-shadow: 0 0 0 3px var(--secondary-color);
+    box-shadow: 0 0 0 3px var(--hi-light-color);
     top: 0;
     left: 0;
     opacity: 0;
@@ -150,13 +159,16 @@ section h1 , p {
 }
 
 .hover-fx:hover {
-    background-color: var(--secondary-color);
-    color: var(--background-color-secondary);
+    background-color: var(--hi-light-color);
 }
 
 .hover-fx:hover::after {
     opacity: 1;
     transform: scale(1.05);
+}
+
+.hover-fx .fa-github:hover::after {
+    color: #ffff;
 }
 
 
