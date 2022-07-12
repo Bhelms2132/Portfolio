@@ -59,3 +59,18 @@ html,body {
 a:hover {
     color: var(--hover-color);
 }
+
+
+
+/* Hides navbar links at 568px */
+@media (max-width: 568px) {
+    .desktop-navbar a{
+        display: none;
+    }
+}
+
+@media (min-width:568px) {
+    .open-slide{
+        display: none;
+    }
+}
