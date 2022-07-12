@@ -60,6 +60,38 @@ a:hover {
     color: var(--hover-color);
 }
 
+/* Slide Menu */
+.side-nav {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: var(--hover-color);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav li {
+    list-style: none;
+}
+
+/* Slide menu links */
+.side-nav a {
+    display: block;
+}
+
+
+.side-nav a:hover {
+    color: var(--primary-text);
+}
+
 
 
 /* Hides navbar links at 568px */
