@@ -8,7 +8,8 @@
 
 /***** Global Variables *****************************/
 :root {
-    --hover-color: #131FF2 ;
+    --hover-color: #000;
+    --slide-background: #131FF2 ;
     --nav-button: #0F228C;
     --primary-text: #5B5B5B;
     --nav-text:#030A8C;
@@ -53,7 +54,7 @@ html,body {
     text-decoration: none;
     padding: 14px 16px;
     font-size: 17px;
-    color: var(--nav-button);
+    color: var(--slide-background);
 }
 
 a:hover {
@@ -66,7 +67,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     height: 100%;
-    background-color: var(--hover-color);
+    background-color: var(--slide-background);
     width: 0;
     position: fixed;
     z-index: 1;
@@ -85,11 +86,14 @@ a:hover {
 /* Slide menu links */
 .side-nav a {
     display: block;
+    padding: 10px 10px 10px 30px;
+    color: var(--primary-background);
+    text-decoration: none;
 }
 
 
 .side-nav a:hover {
-    color: var(--primary-text);
+    color: var(--hover-color);
 }
 
 
