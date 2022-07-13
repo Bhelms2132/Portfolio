@@ -96,6 +96,14 @@ a:hover {
     color: var(--hover-color);
 }
 
+/* Slide menu close button */
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 
 /* Hides navbar links at 568px */
