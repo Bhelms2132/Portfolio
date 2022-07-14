@@ -49,6 +49,7 @@ html,body {
 
 .navbar a {
     float: left;
+    position: relative;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -57,24 +58,21 @@ html,body {
     color: var(--slide-background);
 }
 
-a:hover {
-    color: var(--nav-button);
-}
-
-/* a::after {
+a::after {
     content: '';
     background-color: var(--nav-button) ;
     position: absolute;
     height: 2px;
     width: 0;
-    top: 45px;
-    left: 2;
+    top: 38px;
+    left: 0;
+    /* right: 0; */
+    transition: 0.4s;
 }
 
 .navbar ul li a:hover::after {
-    width: 5%;
-    color: var(--nav-button);
-}  */
+    width: 100%;
+} 
 
 /* Slide Menu */
 .side-nav {
@@ -110,7 +108,7 @@ a:hover {
 
 
 .side-nav a:hover {
-    color: var(--hover-color);
+    color: var(--nav-button);
 }
 
 /* Slide menu close button */
@@ -123,14 +121,18 @@ a:hover {
 }
 
 /* Home Page */
-.home {
+#home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
+}
+
+#home h1, p {
+    padding: 10px;
 }
 
 
