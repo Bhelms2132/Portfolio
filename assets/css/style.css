@@ -10,7 +10,7 @@
 :root {
     --hover-color: #000;
     --slide-background: #131FF2 ;
-    --nav-button: #0F228C;
+    --nav-button: #59fc03;
     --primary-text: #5B5B5B;
     --nav-text:#030A8C;
     --primary-background: #F2F2F2;
@@ -58,8 +58,23 @@ html,body {
 }
 
 a:hover {
-    color: var(--hover-color);
+    color: var(--nav-button);
 }
+
+/* a::after {
+    content: '';
+    background-color: var(--nav-button) ;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top: 45px;
+    left: 2;
+}
+
+.navbar ul li a:hover::after {
+    width: 5%;
+    color: var(--nav-button);
+}  */
 
 /* Slide Menu */
 .side-nav {
@@ -83,6 +98,8 @@ a:hover {
     list-style: none;
 }
 
+
+
 /* Slide menu links */
 .side-nav a {
     display: block;
@@ -104,6 +121,19 @@ a:hover {
     font-size: 36px;
     margin-left: 50px;
 }
+
+/* Home Page */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
 
 
 /* Hides navbar links at 568px */
