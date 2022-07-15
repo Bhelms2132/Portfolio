@@ -127,8 +127,8 @@ a::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 90vh;
-    width: 100vw;
+    height: 100vh;
+    width: 100%;
 }
 
 #home h1, p {
