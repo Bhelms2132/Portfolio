@@ -10,7 +10,7 @@
 :root {
     --hover-effect: #59fc03;
     --primary-text: #5B5B5B;
-    --nav-slide-text:#030A8C;
+    --nav-slide-icons:#030A8C;
     --primary-background: #fff;
     --secondary-background: #e5e5e5e5;
     --option-color:#333;
@@ -54,7 +54,7 @@ html,body {
     text-decoration: none;
     padding: 14px 16px;
     font-size: 17px;
-    color: var(--nav-slide-text);
+    color: var(--nav-slide-icons);
 }
 
 /* Line Hover effect for Navbar */
@@ -94,7 +94,7 @@ a::before {
     justify-content: center;
     text-align: center;
     height: 100%;
-    background-color: var(--nav-slide-text);
+    background-color: var(--nav-slide-icons);
     width: 0;
     position: fixed;
     z-index: 1;
@@ -149,6 +149,43 @@ a::before {
 #home h1, p {
     padding: 10px;
 }
+
+/* Social icons */
+.social-icons  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: relative;
+    color: var(--nav-slide-icons);
+    bottom: -40px;
+}
+
+.social-icons #linkedin {
+    color: var(--primary-background);
+    background-color: var(--nav-slide-icons);
+}
+
+.social-icons #linkedin:hover {
+    color: var(--primary-background);
+    background-color: #0072b1;
+}
+
+.social-icons #github {
+    color: var(--primary-background);
+    background-color: var(--nav-slide-icons);
+}
+
+.social-icons #github:hover {
+    color: var(--primary-background);
+    background-color: #000;
+}
+
 
 /* End Home Page ******************************************/
 
