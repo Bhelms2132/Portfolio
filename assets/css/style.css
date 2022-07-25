@@ -208,9 +208,9 @@ a::before {
 } */
 
 img {
+    float: left;
     height: 25%;
     width: 25%;
-    object-fit: cover;
     padding: 1em;
     border-radius: 25px;
     border: none;
@@ -222,13 +222,7 @@ h2 {
     justify-content: center;
 }
 
-p {
- 
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: end;
-}
+
 /* Hides navbar links at 568px */
 @media (max-width: 568px) {
     .desktop-navbar a{
