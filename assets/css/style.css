@@ -189,6 +189,15 @@ a::before {
 
 /* End Home Page ******************************************/
 
+/* Parallax Image *****************************************/
+.par-image-1 {
+    background-image: url("/assets/images/parallax-1-laptop.jpg");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Hides navbar links at 568px */
 @media (max-width: 568px) {
