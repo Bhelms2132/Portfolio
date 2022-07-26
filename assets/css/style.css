@@ -23,7 +23,7 @@ html,body {
     font-weight: 400;
     background-color: var(--primary-background);
     color: var(--primary-text);
-    line-height: 1.5rem;
+    line-height: 1.6em;
 }
 
 /*******************************************************/
@@ -201,19 +201,21 @@ a::before {
 /********************************************************/
 
 /* About Section ****************************************/
-/* .about {
-    display: flex;
+/* #about {
+    display: block;
     justify-content: center;
+    align-content: center;
     align-items: center;
+    text-align: center;
+
 } */
 
 img {
     float: left;
-    height: 25%;
-    width: 25%;
+    height: 400px;
+    width: 300px;
     padding: 1em;
     border-radius: 25px;
-    border: none;
 }
 
 h2 {
@@ -222,6 +224,9 @@ h2 {
     justify-content: center;
 }
 
+#about #text{
+    background-color: #59fc03;
+}
 
 /* Hides navbar links at 568px */
 @media (max-width: 568px) {
