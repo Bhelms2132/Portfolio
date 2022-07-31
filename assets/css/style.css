@@ -186,16 +186,27 @@ a::before {
 
 /* End Home Page ******************************************/
 
-/* Parallax Image *****************************************/
-.par-image-1 {
+/* Parallax Image's *****************************************/
+.parallax-1 {
     align-items: center;
-    background-image: url("/assets/images/parallax-1-laptop.jpg");
-    min-height: 250px;
+    background-image: url("/assets/images/developer-phone.jpg");
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.parallax-2 {
+    align-items: center;
+    background-image: url("/assets/images/react-js.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /********************************************************/
 
 /* About Section ****************************************/
@@ -237,8 +248,8 @@ h2 {
 .row {
     display: flex;
     justify-content: center;
-    padding: 1em;
-    margin: 1.5em;
+    padding: .5em;
+    margin: .5em;
 }
 
 .column {
@@ -259,10 +270,12 @@ h2 {
 
 #projects img {
     border-radius: 5px 5px 0 0;
+    height: 15em;
 }
 .container {
     padding: 2px 16px;
 }
+
 
 /* Media Queries *********************************************/
 
