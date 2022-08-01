@@ -19,7 +19,7 @@
 /***** Main Styling ********************************/
 html,body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     background-color: var(--primary-background);
     color: var(--primary-text);
@@ -222,8 +222,11 @@ h2 {
     margin: 1.5em;
     display: flex;
     justify-content: center;
-    color: #030A8C;
+    color: var(--nav-slide-icons);
+    text-decoration: underline var(--hover-effect);
 }
+
+ 
 
 #about p {
     display: inline-block;
@@ -250,7 +253,7 @@ h2 {
     box-shadow: 0 4px 8px 0 #000;
     transition: 0.3s;
     border-radius: 5px;
-    color: #0072b1;
+    color: var(--nav-slide-icons);
 }
 
 .card:hover {
@@ -285,15 +288,22 @@ h2 {
     }
 }
 
+/* Parallax */
+
+@media () {
+
+    
+}
+
 /* Responsive Project Cards */
-@media screen and (max-width: 992px){
-    #projects .column {
+@media (max-width: 992px){
+    .row .column {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    #projects .column {
+@media (max-width: 600px) {
+    .row .column {
         width: 100%;
     }
 }
