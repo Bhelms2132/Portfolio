@@ -270,6 +270,14 @@ h2 {
 
 /* Contact Section *******************************************/
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
 
 
 
@@ -286,13 +294,6 @@ h2 {
     .open-slide{
         display: none;
     }
-}
-
-/* Parallax */
-
-@media () {
-
-    
 }
 
 /* Responsive Project Cards */
