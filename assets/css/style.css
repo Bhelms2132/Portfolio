@@ -290,6 +290,19 @@ label {
     display: inline-block;
 }
 
+input[type=submit] {
+    background-color: var(--nav-slide-icons);
+    color: var(--primary-background);
+    border: none;
+    border-radius: .25em;
+    padding: .75em 1.25em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--hover-effect);
+    color: var(--option-color);
+}
 
 
 
