@@ -278,6 +278,11 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
+label {
+    padding: .8em .8em .8em 0;
+    display: inline-block;
+}
+
 
 
 
